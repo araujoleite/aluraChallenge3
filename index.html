@@ -5,8 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Geek</title>
+   
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
 </head>
 <body>
+    <header>
+        <img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek">
+        <nav>
+            <label for="searchBox">Buscador</label><input id="searchBox" type="text" placeholder="O que deseja encontrar">
+            <button>Login</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Dezembro Promocional</h1>
+            <p>Produtos selecionados com até 33% de desconto.</p>
+            <button>Ver Consoles</button>
+        </section>
+        <section>
+            <h2>Star Wars</h2>
+            <article>
+                <img src="assets/img/starWars-1.jpg" alt="">
+                <div>
+                    <p>Produto XYZ</p>
+                    <h3>R$ 60,00</h3>
+                    <a href="#">Ver Produto</a>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek">
+        <ul>
+            <li>Quem somos nós</li>
+            <li>Política de Privacidade</li>
+            <li>Programa fidelidade</li>
+            <li>Nossas lojas</li>
+            <li>Quero ser franqueado</li>
+            <li>Anuncie aqui</li>
+        </ul>
+        <form action="#">
+            <h3>Fale conosco</h3>
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="mesage">Mensagem</label>
+                <textarea name="mesage" id="mesage" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button>Enviar mensagem</button>
+            </div>
+        </form>
+    </footer>
+
     
 </body>
 </html>

@@ -1,5 +1,6 @@
+@import url(icon.css);
+
 :root {
-    
     /* COLORS */
     --blue: #2A7AE4;
     --blueMid: #5595E9;
@@ -8,15 +9,21 @@
     --black05: #F5F5F5;
     --black25: #b9b8b8;
     --black75: #464646;
+    --black100: #000000;
     --transparent: #00000000;
 
     /* TIME BASE */
     --time: 300ms;
+
+    /* ICONS */
+    --close: "\e900";
+    --arrow: "\e901";
+    --search: "\e902";
 }
 
 body {
     background-color: #F5F5F5;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'icomoon', sans-serif;
     color: #464646;
 }
 
@@ -95,9 +102,16 @@ body {
         }
 
         .search__icon {
-            filter: invert(10%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
             opacity: 40%;
             transition: opacity var(--time);
+        }
+
+        .search__icon::before {
+            content: var(--search);
+            font-size: 30px;
+            color: var(--black100);
+            position: relative;
+            top: 3px;
         }
 
         .search__icon:hover {
@@ -245,7 +259,7 @@ body {
 
     @media screen and (min-width: 1048px) {
         .banner {
-            height: 50vh;
+            height: 400px;
             padding: 30px;
         }
     }

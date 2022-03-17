@@ -8,26 +8,29 @@
    
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/base.css">
 </head>
 <body>
-    <header>
-        <img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek">
-        <nav>
-            <label for="searchBox">Buscador</label><input id="searchBox" type="text" placeholder="O que deseja encontrar">
-            <button>Login</button>
-        </nav>
+    <header class="header">    
+        <div class="header__container">
+            <img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek" class="header__logo">
+            <div class="search">
+                <input type="text" placeholder="O que deseja encontrar?" class="search__box">
+                <img src="assets/img/busca.svg" alt="Ícone de lupa" class="search__icon">
+            </div>
+            <button type="button" class="buttonStroke header__login">Login</button>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>Dezembro Promocional</h1>
-            <p>Produtos selecionados com até 33% de desconto.</p>
-            <button>Ver Consoles</button>
+        <section class="banner">
+            <h1 class="banner__title">Dezembro Promocional</h1>
+            <p class="banner__info">Produtos selecionados com até 33% de desconto.</p>
+            <button class="buttonFill">Ver Consoles</button>
         </section>
         <section>
             <h2>Star Wars</h2>
@@ -41,7 +44,7 @@
             </article>
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek">
         <ul>
             <li>Quem somos nós</li>
@@ -65,7 +68,7 @@
                 <button>Enviar mensagem</button>
             </div>
         </form>
-    </footer>
+    </footer> -->
 
     
 </body>

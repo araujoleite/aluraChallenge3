@@ -20,12 +20,13 @@
         <div class="header__container">
             <img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek" class="header__logo">
             <div class="search">
-                <input type="text" placeholder="O que deseja encontrar?" class="search__box">
+                <input type="text" placeholder="O que deseja encontrar?" class="search__input">
                 <i class="search__icon" aria-label="Ícone de pesquisa"></i>
             </div>
             <button type="button" class="buttonStroke header__login">Login</button>
         </div>
     </header>
+    <main>
     <section class="banner">
         <div class="banner__container">
             <h1 class="banner__title">Dezembro Promocional</h1>
@@ -177,15 +178,14 @@
                 <li><a href="#">Quero ser franqueado</a></li>
                 <li><a href="#">Anuncie aqui</a></li>
             </ul>
-            <form action="#" class="footerForm">
-                <h3 class="footerForm__title">Fale conosco</h3>
-                <div>
-                    <label for="name" class="footerForm__name">Nome</label>
-                    <input type="text" name="name" id="name" class="footerForm__nameBox">
+            <form action="#" class="footer__form">
+                <h3 class="form__title">Fale conosco</h3>
+                <div class="form__name">
+                    <input type="text" name="name" id="name" class="form__nameInput" placeholder="Digite seu nome">
+                    <label for="name" class="form__nameLabel">Nome</label>
                 </div>
                 <div>
-                    <!-- <label for="mesage" class="footerForm__fieldTitle">Mensagem</label> -->
-                    <textarea name="message" id="message" class="footerForm__message" placeholder="Escreva sua mensagem"></textarea>
+                    <textarea name="message" id="message" class="form__message" placeholder="Escreva sua mensagem"></textarea>
                 </div>
                 <div>
                     <button class="buttonFill">Enviar mensagem</button>

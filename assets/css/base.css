@@ -33,8 +33,8 @@ body {
 .buttonStroke {
     border-color: var(--blue100);
     background-color: #ffffff00;
-    padding: 12px 14px;
-    width: 150px;
+    padding: 12px 30px;
+    width: fit-content;
     max-width: 200px;
     font-size: 16px;
     font-weight: 500;
@@ -50,8 +50,9 @@ body {
 
 .buttonFill {
     background-color: var(--blue100);
-    padding: 12px 16px;
-    width: 150px;
+    padding: 12px 30px;
+    width: fit-content;
+    box-sizing: border-box;
     font-size: 14px;
     font-weight: 400;
     color: var(--white);
@@ -62,7 +63,7 @@ body {
 
     .buttonFill:hover {
         
-        background-color: var(--blue50);
+        background-color: var(--blue75);
         
     }
 
@@ -277,7 +278,6 @@ body {
         top: 1px;
     }
 
-
     .box {
         display: flex;
         flex-direction: column;
@@ -314,6 +314,10 @@ body {
             color: var(--blue100);
         }
 
+        .box__more:hover {
+            color: var(--blue75);
+        }
+
         .box--hide {
             display: none;
         }
@@ -341,13 +345,14 @@ body {
 .footer {
     background-color: var(--blue10);
     width: 100%;
-    padding: 20px 20px;
     box-sizing: border-box;
 }
     .footer__container {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 20px 20px;
+        box-sizing: border-box;
         max-width: 1000px;
         margin: 0 auto 20px;
         gap: 20px;
@@ -355,6 +360,7 @@ body {
 
     .footer__logo {
         height: 50px;
+        align-self: center;
     }
 
     .footer__pages {
@@ -362,6 +368,10 @@ body {
         flex-direction: column;
         align-items: center;
         row-gap: 16px;
+    }
+
+    .footer__pages li:hover {
+        color: var(--blue100);
     }
 
     .footer__form {
@@ -428,6 +438,15 @@ body {
         .form__message::placeholder {
             color: var(--black25);
         }
+
+    .footer__sign {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        row-gap: 5px;
+    }
     
     @media screen and (min-width:768px) {
         .footer__container {
@@ -437,6 +456,7 @@ body {
 
         .footer__pages {
             align-items: flex-start;
+            row-gap: 20px;
         }
 
         .footer__form {
@@ -450,7 +470,17 @@ body {
             grid-template-columns: 1fr 1fr 2fr;
         }
 
+        .footer__logo {
+            align-self: flex-start;
+        }
+
+        .footer__pages {
+            align-self: flex-start;
+            padding-top: 15px;
+        }
+
         .footer__form {
+            align-self: flex-start;
             grid-column: 3;
         }
     }

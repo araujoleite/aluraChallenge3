@@ -1,0 +1,152 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(../img/Banner.jpg) center;
+    background-size: cover;
+    height: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+    .banner__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        gap: 15px;
+    }
+
+        .banner__title {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        .banner__info {
+            color: #FFFFFF;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+    @media screen and (min-width: 768px) {
+        .banner {
+            height: 300px;
+            padding: 30px;
+        }
+
+        .banner__title {
+            font-size: 52px;
+        }
+
+        .banner__info {
+            font-size: 22px;
+        }
+    }
+
+    @media screen and (min-width: 1048px) {
+        .banner {
+            height: 400px;
+            padding: 30px;
+        }
+    }
+
+.section {
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+    .section__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto 20px;
+        gap: 20px;
+    }
+
+    .section__title {
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--black75);
+    }
+
+    .section__more {
+        justify-self: end;
+        font-weight: 700;
+        color: var(--blue100);
+        font-size: 16px;
+    }
+
+    .section__more::after {
+        content: var(--arrow);
+        margin-left: 3px;
+        position: relative;
+        top: 1px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 8px;
+        cursor: pointer;
+    }
+
+        .box__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            gap: 20px;
+        }
+
+        .box__name {
+            font-weight: 500;
+            color: var(--black75);
+            font-size: 14px;
+        }
+
+        .box__price {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--black75);
+        }
+
+        .box__more {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--blue100);
+        }
+
+        .box__more:hover {
+            color: var(--blue75);
+        }
+
+        .box--hide {
+            display: none;
+        }
+
+    @media screen and (min-width: 768px) {
+        .box__container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {        
+        .section {
+            margin-top: 30px;
+        }
+        
+        .box__container {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .box--hide {
+            display: flex;
+        }
+    }

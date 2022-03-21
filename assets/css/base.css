@@ -42,6 +42,7 @@ body {
     border-style: solid;
     border-width: 1px;
     transition: background-color var(--time);
+    cursor: pointer;
 }
 
     .buttonStroke:hover {
@@ -59,6 +60,7 @@ body {
     border-style: none;
     border-width: 1px;
     transition: background-color var(--time);
+    cursor: pointer;
 }
 
     .buttonFill:hover {
@@ -114,6 +116,7 @@ body {
         .search__icon {
             opacity: 40%;
             transition: opacity var(--time);
+            cursor: pointer;
         }
 
         .search__icon::before {
@@ -293,6 +296,15 @@ body {
         align-items: center;
         padding: 30px;
         row-gap: 5px;
+    }
+
+    .linkDev {
+        font-weight: 700;
+        transition: color var(--time);
+    }
+
+    .linkDev:hover {
+        color: var(--blue100);
     }
     
     @media screen and (min-width:768px) {

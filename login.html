@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek /Login</title>
+   
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">    
+        <div class="header__container">
+            <a href="index.html"><img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek" class="header__logo"></a>
+            <div class="search">
+                <input type="text" placeholder="O que deseja encontrar?" class="search__input">
+                <i class="search__icon" aria-label="Ícone de pesquisa"></i>
+            </div>
+            <button type="button" class="buttonStroke header__login" onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </header>
+    <main>
+        <form action="#" class="formLogin">
+            <h3 class="formLogin__title">Iniciar Sessão</h3>
+            <div class="formLogin__field">
+                <input type="email" name="email" id="email" class="formLogin__input" placeholder="Digite seu e-mail">
+                <label for="email" class="formLogin__label">E-mail</label>
+            </div>
+            <div class="formLogin__field">
+                <input type="password" name="senha" id="senha" class="formLogin__input" placeholder="Digite sua senha">
+                <label for="senha" class="formLogin__label">Senha</label>
+            </div>
+            <button type="submit" class="buttonFill buttonEntrar">Entrar</button>
+            <div class="formLogin__erros"></div>
+        </form>
+    </main>
+    <footer class="footer">
+        <section class="footer__container">
+            <div class="footer__logo"><img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek"></div>
+            <ul class="footer__pages">
+                <li><a href="#">Quem somos nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Programa fidelidade</a></li>
+                <li><a href="#">Nossas lojas</a></li>
+                <li><a href="#">Quero ser franqueado</a></li>
+                <li><a href="#">Anuncie aqui</a></li>
+            </ul>
+            <form action="#" class="footer__form">
+                <h3 class="form__title">Fale conosco</h3>
+                <div class="form__name">
+                    <input type="text" name="name" id="name" class="form__nameInput" placeholder="Digite seu nome">
+                    <label for="name" class="form__nameLabel">Nome</label>
+                </div>
+                <div>
+                    <textarea name="message" id="message" class="form__message" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <div>
+                    <button class="buttonFill">Enviar mensagem</button>
+                </div>
+            </form>
+        </section>
+        <section class="footer__sign">
+            <p>Desenvolvido por <a href="https://github.com/araujoleite" class="linkDev">Alan Leite</a></p>
+            <p>2022</p>
+        </section>
+    </footer>
+
+    
+</body>
+</html>

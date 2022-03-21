@@ -1,0 +1,62 @@
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+}
+
+    .formLogin__title {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--black75);
+    }
+
+    .formLogin__field {
+        display: flex;
+        background-color: var(--white);
+        padding: 0 15px;
+        width: 275px;
+        box-sizing: border-box;
+    }
+
+        .formLogin__label {
+            font-size: 16px;
+            color: var(--black25);
+            position: absolute;
+            transform-origin: top left;
+            transform: translate(0, 6px) scale(0.75);
+            transition: all var(--time);
+        }
+
+        .formLogin__input {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            padding: 18px 0 10px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .formLogin__input::placeholder {
+            opacity: 0;
+            transition: opacity var(--time);
+        }
+
+        .formLogin__input:focus::placeholder {
+            opacity: 50%;
+        }
+
+        .formLogin__field>input[placeholder]:not(:focus):placeholder-shown + label {
+            transform: translate(0, 18px) scale(1);
+        }
+
+@media screen and (min-width: 1200px) {
+    .formLogin__field, .buttonEntrar {
+        /* box-sizing: border-box; */
+        width: 450px;
+    }
+}

@@ -3,7 +3,7 @@ Projeto do 3º Alura Challenge de Front-end.  // *3º Alura Challenge Front-end 
 
 **🚧 Em construção // *Under construction* 🚧**
 
-# 🖥 Preview
+# 🖥 Resultado
 https://alura-challenge3.vercel.app
 
 # ✔ Tecnologias utilizadas

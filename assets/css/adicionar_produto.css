@@ -1,0 +1,98 @@
+.addForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+    .addForm__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--black75);
+    }
+
+    .addForm__img {
+        background-color: var(--white);
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        color: var(--black25);
+        border: dashed 1px var(--black25);
+    }
+
+    .addForm__field {
+        display: flex;
+        background-color: var(--white);
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+        .addForm__label {
+            font-size: 16px;
+            color: var(--black25);
+            position: absolute;
+            transform-origin: top left;
+            transform: translate(0, 6px) scale(0.75);
+            transition: all var(--time);
+        }
+
+        .addForm__input {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .addForm__input::placeholder {
+            opacity: 0;
+            transition: opacity var(--time);
+        }
+
+        .addForm__input:focus::placeholder {
+            opacity: 50%;
+        }
+
+        .addForm__input:not(:focus):placeholder-shown + label {
+            transform: translate(0, 18px) scale(1);
+        }
+
+        .addForm__message {
+            width: 100%;
+            outline: none;
+            padding: 15px;
+            box-sizing: border-box;
+            resize: none;
+            font-size: 16px;
+            height: 120px;
+        }
+
+        .addForm__message::placeholder {
+            color: var(--black25);
+        }
+
+        .buttonAdd {
+            width: 100%;
+        }
+
+/* @media screen and (min-width: 768px) {
+    .addForm {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .addForm {
+        height: 600px;
+    }
+    .addForm__field, .buttonEntrar {
+        width: 450px;
+    }
+} */

@@ -233,20 +233,20 @@ body {
         box-sizing: border-box;
     }
 
-        .form__title {
+        .footerForm__title {
             font-size: 16px;
             font-weight: 700;
             color: var(--black75);
         }
 
-        .form__name {
+        .footerForm__name {
             display: flex;
             background-color: var(--white);
             position: relative;
             padding: 0 15px;
         }
 
-            .form__nameLabel {
+            .footerForm__nameLabel {
                 font-size: 16px;
                 color: var(--black25);
                 position: absolute;
@@ -255,27 +255,28 @@ body {
                 transition: all var(--time);
             }
 
-            .form__nameInput {
+            .footerForm__nameInput {
                 width: 100%;
                 font-size: 16px;
                 padding: 16px 0 10px;
                 outline: none;
             }
 
-            .form__nameInput::placeholder {
+            .footerForm__nameInput::placeholder {
                 opacity: 0;
                 transition: opacity var(--time);
             }
 
-            .form__nameInput:focus::placeholder {
+            .footerForm__nameInput:focus::placeholder {
                 opacity: 50%;
             }
 
-            .form__name>input[placeholder]:not(:focus):placeholder-shown + label {
+            /* Seleciono o input que NÃO estã em foco e está exibindo placeholder e pego o primeiro label que aparece após ele */
+            .footerForm__nameInput:not(:focus):placeholder-shown + label {
                 transform: translate(0, 16px) scale(1);
             }
 
-        .form__message {
+        .footerForm__message {
             width: 100%;
             box-sizing: border-box;
             resize: none;
@@ -285,7 +286,7 @@ body {
             font-size: 16px;
         }
 
-        .form__message::placeholder {
+        .footerForm__message::placeholder {
             color: var(--black25);
         }
 
@@ -344,3 +345,103 @@ body {
             grid-column: 3;
         }
     }
+
+.productSection {
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+    .productSection__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto 20px;
+        gap: 20px;
+    }
+
+    .productSection__title {
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--black75);
+    }
+
+    .productSection__more {
+        justify-self: end;
+        font-weight: 700;
+        color: var(--blue100);
+        font-size: 16px;
+    }
+
+    .productSection__more::after {
+        content: var(--arrow);
+        margin-left: 3px;
+        position: relative;
+        top: 1px;
+    }
+
+.itemBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 8px;
+    cursor: pointer;
+}
+
+    .itemBox__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto 20px;
+        gap: 20px;
+    }
+
+    .itemBox__name {
+        font-weight: 500;
+        color: var(--black75);
+        font-size: 14px;
+    }
+
+    .itemBox__price {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--black75);
+    }
+
+    .itemBox__more {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--blue100);
+    }
+
+    .itemBox__more:hover {
+        color: var(--blue75);
+    }
+
+    .itemBox--hide {
+        display: none;
+    }
+
+@media screen and (min-width: 768px) {
+    .itemBox__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {        
+    .productSection {
+        margin-top: 30px;
+    }
+    
+    .itemBox__container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .itemBox--hide {
+        display: flex;
+    }
+}

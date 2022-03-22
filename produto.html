@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+   
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/produto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">    
+        <div class="header__container">
+            <a href="index.html"><img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek" class="header__logo"></a>
+            <div class="search">
+                <input type="text" placeholder="O que deseja encontrar?" class="search__input">
+                <i class="search__icon" aria-label="Ícone de pesquisa"></i>
+            </div>
+            <button type="button" class="buttonStroke header__login" onclick="window.location.href='login.html'">Login</button>
+        </div>
+    </header>
+    <main>
+        <section class="product__container">
+            <div class="product__img"></div>
+            <div class="product__details">
+                <h1 class="product__name">Produto XYZ</h1>
+                <p class="product__price">R$ 60,00</p>
+                <p class="product__info">
+                    Voluptas voluptatum quibusdam similique, class debitis alias maecenas eveniet ridiculus, facilis fusce! Ullam conubia? Sociis, minima malesuada habitasse distinctio sequi aliqua malesuada. Quisque deleniti proin expedita, aliquid litora. Iste recusandae? Commodo, quia ridiculus doloribus vero dictum? Penatibus donec placeat faucibus, dolorum do. Animi porta anim magnam
+                </p>
+            </div>
+        </section>
+        <section class="productSection">
+            <div class="productSection__container">
+                <h2 class="productSection__title">Produtos similares</h2>
+                <!-- <a href="#" class="productSection__more">Ver tudo</a> -->
+            </div>
+            <div class="itemBox__container">
+                <article class="itemBox">
+                    <img src="assets/img/starWars-1.jpg" alt="" class="itemBox__img">
+                    <p class="itemBox__name">Produto XYZ</p>
+                    <h3 class="itemBox__price">R$ 60,00</h3>
+                    <a href="#" class="itemBox__more">Ver Produto</a>
+                </article>
+                <article class="itemBox">
+                    <img src="assets/img/starWars-2.jpg" alt="" class="itemBox__img">
+                    <p class="itemBox__name">Produto XYZ</p>
+                    <h3 class="itemBox__price">R$ 60,00</h3>
+                    <a href="#" class="itemBox__more">Ver Produto</a>
+                </article>
+                <article class="itemBox">
+                    <img src="assets/img/starWars-3.jpg" alt="" class="itemBox__img">
+                    <p class="itemBox__name">Produto XYZ</p>
+                    <h3 class="itemBox__price">R$ 60,00</h3>
+                    <a href="#" class="itemBox__more">Ver Produto</a>
+                </article>
+                <article class="itemBox">
+                    <img src="assets/img/starWars-4.jpg" alt="" class="itemBox__img">
+                    <p class="itemBox__name">Produto XYZ</p>
+                    <h3 class="itemBox__price">R$ 60,00</h3>
+                    <a href="#" class="itemBox__more">Ver Produto</a>
+                </article>
+                <article class="itemBox itemBox--hide">
+                    <img src="assets/img/starWars-5.jpg" alt="" class="itemBox__img">
+                    <p class="itemBox__name">Produto XYZ</p>
+                    <h3 class="itemBox__price">R$ 60,00</h3>
+                    <a href="#" class="itemBox__more">Ver Produto</a>
+                </article>
+                <article class="itemBox itemBox--hide">
+                    <img src="assets/img/starWars-6.jpg" alt="" class="itemBox__img">
+                    <p class="itemBox__name">Produto XYZ</p>
+                    <h3 class="itemBox__price">R$ 60,00</h3>
+                    <a href="#" class="itemBox__more">Ver Produto</a>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <section class="footer__container">
+            <div class="footer__logo"><img src="assets/img/Logo.svg" alt="Logotipo da AluraGeek"></div>
+            <ul class="footer__pages">
+                <li><a href="#">Quem somos nós</a></li>
+                <li><a href="#">Política de Privacidade</a></li>
+                <li><a href="#">Programa fidelidade</a></li>
+                <li><a href="#">Nossas lojas</a></li>
+                <li><a href="#">Quero ser franqueado</a></li>
+                <li><a href="#">Anuncie aqui</a></li>
+            </ul>
+            <form action="#" class="footer__form">
+                <h3 class="footerForm__title">Fale conosco</h3>
+                <div class="footerForm__name">
+                    <input type="text" name="name" id="name" class="footerForm__nameInput" placeholder="Digite seu nome">
+                    <label for="name" class="footerForm__nameLabel">Nome</label>
+                </div>
+                <div>
+                    <textarea name="message" id="message" class="footerForm__message" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="buttonFill">Enviar mensagem</button>
+                </div>
+            </form>
+        </section>
+        <section class="footer__sign">
+            <p>Desenvolvido por <a href="https://github.com/araujoleite" class="linkDev">Alan Leite</a></p>
+            <p>2022</p>
+        </section>
+    </footer>
+
+    
+</body>
+</html>

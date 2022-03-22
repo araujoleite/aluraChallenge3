@@ -1,0 +1,68 @@
+.product__img {
+    background: url(../img/starWars-4.jpg) center;
+    background-size: cover;
+    height: 190px;
+}
+
+.product__details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    row-gap: 10px;
+}
+
+    .product__name {
+        font-weight: 500;
+        color: var(--black75);
+        font-size: 22px;
+    }
+
+    .product__price {
+        font-size: 16px;
+        font-weight: 700;
+        color: var(--black75);
+    }
+
+    .product__info {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--black75);
+    }
+
+@media screen and (min-width: 768px) {
+    .product__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 20px 20px;
+    }
+
+    .product__img {
+        height: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product__img {
+        height: 400px;
+    }
+
+    .product__name {
+        font-size: 50px;
+    }
+
+    .product__info {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

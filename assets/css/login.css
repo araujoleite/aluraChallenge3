@@ -1,4 +1,4 @@
-.formLogin {
+.loginForm {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,13 +9,13 @@
     box-sizing: border-box;
 }
 
-    .formLogin__title {
+    .loginForm__title {
         font-size: 16px;
         font-weight: 700;
         color: var(--black75);
     }
 
-    .formLogin__field {
+    .loginForm__field {
         display: flex;
         background-color: var(--white);
         padding: 0 15px;
@@ -23,7 +23,7 @@
         box-sizing: border-box;
     }
 
-        .formLogin__label {
+        .loginForm__label {
             font-size: 16px;
             color: var(--black25);
             position: absolute;
@@ -32,7 +32,7 @@
             transition: all var(--time);
         }
 
-        .formLogin__input {
+        .loginForm__input {
             width: 100%;
             height: 50px;
             font-size: 16px;
@@ -41,31 +41,30 @@
             outline: none;
         }
 
-        .formLogin__input::placeholder {
+        .loginForm__input::placeholder {
             opacity: 0;
             transition: opacity var(--time);
         }
 
-        .formLogin__input:focus::placeholder {
+        .loginForm__input:focus::placeholder {
             opacity: 50%;
         }
 
-        .formLogin__field>input[placeholder]:not(:focus):placeholder-shown + label {
+        .loginForm__input:not(:focus):placeholder-shown + label {
             transform: translate(0, 18px) scale(1);
         }
 
 @media screen and (min-width: 768px) {
-    .formLogin {
+    .loginForm {
         height: 500px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .formLogin {
+    .loginForm {
         height: 600px;
     }
-    .formLogin__field, .buttonEntrar {
-        /* box-sizing: border-box; */
+    .loginForm__field, .buttonEntrar {
         width: 450px;
     }
 }

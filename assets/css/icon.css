@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?9hjh5g');
-  src:  url('../fonts/icomoon.eot?9hjh5g#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?9hjh5g') format('truetype'),
-    url('../fonts/icomoon.woff?9hjh5g') format('woff'),
-    url('../fonts/icomoon.svg?9hjh5g#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?pighkl');
+  src:  url('../fonts/icomoon.eot?pighkl#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pighkl') format('truetype'),
+    url('../fonts/icomoon.woff?pighkl') format('woff'),
+    url('../fonts/icomoon.svg?pighkl#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,8 +28,24 @@
 /*
 EXAMPLE
 
-.icon-saida:before {
+.icon-Vector-4:before {
   content: "\e900";
+  color: #808080;
+}
+.icon-Vector-3:before {
+  content: "\e903";
+  color: #808080;
+}
+.icon-Vector-2:before {
+  content: "\e904";
+  color: #808080;
+}
+.icon-Vector-1:before {
+  content: "\e905";
+  color: #808080;
+}
+.icon-Vector:before {
+  content: "\e906";
   color: #808080;
 }
 .icon-seta:before {
@@ -39,4 +55,5 @@ EXAMPLE
 .icon-busca:before {
   content: "\e902";
   color: #808080;
+}
 } */

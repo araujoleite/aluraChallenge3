@@ -8,7 +8,8 @@
     --blue10: #EAF2FD;
     --white: #FFFFFF;
     --black05: #F5F5F5;
-    --black25: #b9b8b8;
+    --black25: #b8b8b8;
+    --black50: #6b6b6b;
     --black75: #464646;
     --black100: #000000;
     --transparent: #00000000;
@@ -20,6 +21,10 @@
     --close: "\e900";
     --arrow: "\e901";
     --search: "\e902";
+    --plus: "\e903";
+    --delete: "\e904";
+    --edit: "\e905";
+    --image: "\e906";
 }
 
 body {
@@ -35,7 +40,7 @@ body {
     background-color: #ffffff00;
     padding: 12px 30px;
     width: fit-content;
-    max-width: 200px;
+    box-sizing: border-box;
     font-size: 14px;
     font-weight: 500;
     color: #2A7AE4;
@@ -58,15 +63,12 @@ body {
     font-weight: 400;
     color: var(--white);
     border-style: none;
-    border-width: 1px;
     transition: background-color var(--time);
     cursor: pointer;
 }
 
     .buttonFill:hover {
-        
         background-color: var(--blue75);
-        
     }
 
 @media screen and (min-width: 1200px) {
@@ -135,6 +137,7 @@ body {
         .header {
             padding: 10px 30px;
         }
+
         .search{
             order: 0;
             padding: 10px 16px;
@@ -192,6 +195,7 @@ body {
         }
     }
 
+
 .footer {
     background-color: var(--blue10);
     width: 100%;
@@ -201,9 +205,9 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 20px 20px;
         box-sizing: border-box;
-        max-width: 1000px;
+        max-width: 1060px;
+        padding: 10px 20px;
         margin: 0 auto 20px;
         gap: 20px;
     }
@@ -312,6 +316,7 @@ body {
         .footer__container {
             display: grid;
             grid-template-columns: 1fr 2fr;
+            padding: 10px 30px;
         }
 
         .footer__pages {
@@ -329,6 +334,7 @@ body {
         .footer__container {
             grid-template-columns: 1fr 1fr 2fr;
             padding: 20px 0;
+            max-width: 1000px;
         }
 
         .footer__logo {

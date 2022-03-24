@@ -3,27 +3,59 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 15px;
+    row-gap: 20px;
     width: 100%;
-    padding: 20px;
+    margin: 0 auto;
     box-sizing: border-box;
+    padding: 20px;
 }
 
     .addForm__title {
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 700;
         color: var(--black75);
+        align-self: flex-start;
     }
 
-    .addForm__img {
-        background-color: var(--white);
+    .addForm__dragDrop {
         width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        text-align: center;
-        color: var(--black25);
-        border: dashed 1px var(--black25);
     }
+        .dragDrop__img {
+            background-color: var(--white);
+            width: 100%;
+            padding: 60px 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            border: dashed 1px var(--black25);
+        }
+
+            .dragDrop__img--icon::before {
+                content: var(--plus);
+                font-size: 30px;
+                color: var(--black25);
+            }
+
+            .dragDrop__img--text {
+                text-align: center;
+                font-size: 16px;
+                color: var(--black50);
+                line-height: 18px;
+            }
+            
+            .dragDrop__img--text::before {
+                content: "Adicionar uma imagem para o produto";
+            }
+        
+        .dragDrop__or {
+            display: none;
+        }
+        .dragDrop__btn {
+            display: none;
+            font-size: 16px;
+        }
 
     .addForm__field {
         display: flex;
@@ -82,17 +114,64 @@
             width: 100%;
         }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .addForm {
-        height: 500px;
+        padding: 20px 30px;
+        max-width: 1050px;
     }
+
+    .addForm__dragDrop {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+        .dragDrop__img {
+            width: 300px;
+            padding: 40px;
+        }
+
+            .dragDrop__img--icon::before {
+                content: var(--image);
+            }
+
+            .dragDrop__img--text::before {
+                content: "Arraste para adicionar uma imagem para o produto";
+            }
+
+            .btnText::before {
+                content: "Procure no seu tablet";
+            }
+        
+        .dragDrop__or, .dragDrop__btn {
+            display: block;
+        }
+
+        .dragDrop__btn {
+            height: 60px;
+        }
 }
 
 @media screen and (min-width: 1200px) {
     .addForm {
-        height: 600px;
+        max-width:650px;
+        padding: 20px 0;
     }
-    .addForm__field, .buttonEntrar {
-        width: 450px;
+
+    .addForm__title {
+        font-size: 32px;
     }
-} */
+
+    .addForm__dragDrop {
+        justify-content: space-between;
+    }
+
+        .btnText::before {
+            content: "Procure no seu computador";
+        }
+
+    .buttonAdd {
+        height: 55px;
+    }
+}

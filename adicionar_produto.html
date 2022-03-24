@@ -30,20 +30,23 @@
     <main>
         <form action="#" class="addForm">
             <h3 class="addForm__title">Adicionar novo produto</h3>
-            <div class="addForm__img">
-                Adicionar uma imagem para o produto
+            <div class="addForm__dragDrop">
+                <div class="dragDrop__img">
+                    <i class="dragDrop__img--icon"></i>
+                    <p class="dragDrop__img--text"></p>
+                </div>
+                <p class="dragDrop__or">Ou</p>
+                <button class="buttonStroke dragDrop__btn"><i class="btnText"></i></button>
             </div>
             <div class="addForm__field">
-                <input type="email" name="email" id="email" class="addForm__input" placeholder="Digite seu e-mail">
+                <input type="email" name="email" id="email" class="addForm__input" placeholder="Digite o nome do produto">
                 <label for="email" class="addForm__label">Nome do produto</label>
             </div>
             <div class="addForm__field">
-                <input type="password" name="senha" id="senha" class="addForm__input" placeholder="Digite sua senha">
+                <input type="password" name="senha" id="senha" class="addForm__input" placeholder="R$ 00,00">
                 <label for="senha" class="addForm__label">Preço do produto</label>
             </div>
-            <!-- <div class="addForm__field"> -->
-                <textarea name="descricao" class="addForm__message" placeholder="Descrição do produto"></textarea>
-            <!-- </div> -->
+            <textarea name="descricao" class="addForm__message" placeholder="Descrição do produto"></textarea>
             <button type="submit" class="buttonFill buttonAdd">Adicionar produto</button>
             <div class="addForm__erros"></div>
         </form>

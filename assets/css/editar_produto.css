@@ -1,0 +1,57 @@
+.h1__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    gap: 20px;
+}
+
+.h1__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--black75);
+}
+
+.itemBox__code {
+    font-size: 15px;
+    color: var(--black75);
+    font-weight: 500;
+}
+
+
+.itemBox__changes {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    column-gap: 20px;
+    color: var(--white);
+    font-size: 25px;
+}
+
+    .delete::before{
+        content: var(--delete);
+        opacity: 70%;
+        transition: opacity var(--time);
+    }
+
+    .edit::before {
+        content: var(--edit);
+        opacity: 70%;
+        transition: opacity var(--time);
+    }
+
+    .delete:hover::before, .edit:hover::before {
+        opacity: 100%;
+    }
+
+@media screen and (min-width: 1200px) {
+    .itemBox__changes {
+        font-size: 15px;
+    }
+    
+}

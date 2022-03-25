@@ -388,22 +388,24 @@ body {
         top: 1px;
     }
 
-.itemBox {
-    display: flex;
-    flex-direction: column;
+.itemBox__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
     width: 100%;
-    row-gap: 8px;
-    cursor: pointer;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
 }
-
-    .itemBox__container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-between;
+    
+    .itemBox {
+        display: flex;
+        flex-direction: column;
+        position: relative;
         width: 100%;
-        max-width: 1000px;
-        margin: 0 auto 20px;
-        gap: 20px;
+        row-gap: 8px;
+        cursor: pointer;
+        margin-bottom: 10px;
     }
 
     .itemBox__name {
@@ -445,6 +447,10 @@ body {
     
     .itemBox__container {
         grid-template-columns: repeat(6, 1fr);
+    }
+
+    .itemBox {
+        margin-bottom: 30px;
     }
 
     .itemBox--hide {

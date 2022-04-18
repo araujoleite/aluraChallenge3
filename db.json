@@ -1,0 +1,157 @@
+{
+    "categories": [
+        {"id": 1, "type": "starWars"},
+        {"id": 2, "type": "consoles"},
+        {"id": 3, "type": "diversos"}
+    ],
+    
+    "products": [
+        {
+        "id": 1,
+        "categoryId": "1",
+        "name": "Baby Yoda",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/starWars-1.jpg"
+        },
+        {
+        "id": 2,
+        "categoryId": "1",
+        "name": "Kylo Ren",
+        "price": 40.00,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/starWars-2.jpg"
+        },
+        {
+        "id": 3,
+        "categoryId": "1",
+        "name": "Storm Trooper",
+        "price": 35.00,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/starWars-3.jpg"
+        },
+        {
+        "id": 4,
+        "categoryId": "1",
+        "name": "Caneca Storm Trooper",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/starWars-4.jpg"
+        },
+        {
+        "id": 5,
+        "categoryId": "1",
+        "name": "Lego Darth Vader",
+        "price": 80.00,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/starWars-5.jpg"
+        },
+        {
+        "id": 4,
+        "categoryId": "1",
+        "name": "Boneco Yoda",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/starWars-6.jpg"
+        },
+
+        {
+        "id": 5,
+        "categoryId": "2",
+        "name": "Controle de X-Box",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Consoles-1.jpg"
+        },
+        {
+        "id": 6,
+        "categoryId": "2",
+        "name": "Playstation 5",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Consoles-2.jpg"
+        },
+        {
+        "id": 7,
+        "categoryId": "2",
+        "name": "Gameboy Color",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Consoles-3.jpg"
+        },
+        {
+        "id": 8,
+        "categoryId": "2",
+        "name": "Controle Switch",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Consoles-4.jpg"
+        },
+        {
+        "id": 9,
+        "categoryId": "2",
+        "name": "X-Box Series X",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Consoles-5.jpg"
+        },
+        {
+        "id": 10,
+        "categoryId": "2",
+        "name": "Nintendo",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Consoles-6.jpg"
+        },
+        {
+        "id": 11,
+        "categoryId": "3",
+        "name": "Boneco Sonic",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Diversos-1.jpg"
+        },
+        {
+        "id": 12,
+        "categoryId": "3",
+        "name": "Camiseta Controle Nintendo",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Diversos-2.jpg"
+        },
+        {
+        "id": 13,
+        "categoryId": "3",
+        "name": "Camiseta Atari",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Diversos-3.jpg"
+        },
+        {
+        "id": 14,
+        "categoryId": "3",
+        "name": "Radio Relógio",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Diversos-4.jpg"
+        },
+        {
+        "id": 15,
+        "categoryId": "3",
+        "name": "Óculos VR",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Diversos-5.jpg"
+        },
+        {
+        "id": 16,
+        "categoryId": "3",
+        "name": "Fantasia Pikachu",
+        "price": 50.23,
+        "description": "Uma bela duma descrição",
+        "image": "assets/img/Diversos-6.jpg"
+        }
+        
+
+    ]
+}

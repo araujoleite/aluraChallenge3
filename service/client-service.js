@@ -12,7 +12,18 @@ const getItems = async () => {
     return data
 }
 
+const itemInfos = (id) => {
+    return fetch(`http://localhost:3000/products/${id}`)
+    .then(resposta => {
+        if(resposta.ok){
+            return resposta.json()
+        }
+        throw new Error('Não foi possivel detalhar cliente')
+    })
+}
+
 export const clientService = {
     getCategories,
-    getItems
+    getItems,
+    itemInfos
 }

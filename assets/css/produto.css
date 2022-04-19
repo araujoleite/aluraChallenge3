@@ -1,5 +1,5 @@
 .product__img {
-    background: url(../img/starWars-4.jpg) center;
+    /* background: url(../img/starWars-4.jpg) center; */
     background-size: cover;
     height: 190px;
 }

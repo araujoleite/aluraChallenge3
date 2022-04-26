@@ -1,5 +1,6 @@
 .product__img {
-    /* background: url(../img/starWars-4.jpg) center; */
+    background-image: var(--imgHighlight); /* variável definida pelo produto-controller.js */
+    background-position: center;
     background-size: cover;
     height: 190px;
 }

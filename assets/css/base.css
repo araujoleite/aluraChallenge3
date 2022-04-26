@@ -404,7 +404,7 @@ body {
         position: relative;
         width: 100%;
         row-gap: 8px;
-        cursor: pointer;
+        /* cursor: pointer; */
         margin-bottom: 10px;
     }
 

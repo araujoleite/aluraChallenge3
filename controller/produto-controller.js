@@ -6,8 +6,8 @@ import { clientService } from "../service/client-service.js";
 
     const item = await clientService.itemInfos(id)
 
-    const productImage = document.querySelector('[data-productImg]')
-    productImage.style = `background: url(${item.image}) center; background-size: cover`
+    const productImage = document.querySelector(':root')
+    productImage.style.setProperty('--imgHighlight', `url(/${item.image})`)
 
     const productDetail = document.querySelector('[data-productDetail]')
     productDetail.innerHTML = `
@@ -17,5 +17,4 @@ import { clientService } from "../service/client-service.js";
             <p class="product__info">${item.description}</p>
         </div>
     `
-    console.log(item)    
 })()

@@ -26,7 +26,7 @@ import { clientService } from "../service/client-service.js"
                     }
     
                     article.innerHTML = `
-                        <img src="${item.image}" alt="${item.name}" class="itemBox__img">
+                        <a href="produto.html?id=${item.id}" class="itemBox__img"><img src="${item.image}" alt="${item.name}"></a>
                         <p class="itemBox__name">${item.name}</p>
                         <h3 class="itemBox__price">R$ ${item.price}</h3>
                         <a href="produto.html?id=${item.id}" class="itemBox__more">Ver Produto</a>

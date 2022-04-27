@@ -1,6 +1,8 @@
 import { clientService } from "../service/client-service.js";
 
 ( async () => {
+    // -- CARREGA O PRODUTO SELECIONADO
+    
     const takeURL = new URL(window.location)
     const id = takeURL.searchParams.get('id')
 
@@ -17,4 +19,10 @@ import { clientService } from "../service/client-service.js";
             <p class="product__info">${item.description}</p>
         </div>
     `
+
+    // -- CARREGA OS PRODUTOS RELACIONADOS
+
+    const relatedItems = await clientService.relatedItems(item.categoryId)
+
+    console.log(relatedItems)
 })()

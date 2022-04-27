@@ -22,8 +22,17 @@ const itemInfos = (id) => {
     })
 }
 
+const relatedItems = async (categoryId) => {
+    const url = 'http://localhost:3000/products'
+    const takeData = await fetch(url)
+    const data = await takeData.json()
+    const filteredData = data.filter(items => items.categoryId == categoryId)
+    return filteredData
+}
+
 export const clientService = {
     getCategories,
     getItems,
-    itemInfos
+    itemInfos,
+    relatedItems
 }

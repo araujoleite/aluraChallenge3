@@ -22,7 +22,7 @@ const itemInfos = (id) => {
     })
 }
 
-const relatedItems = async (categoryId) => {
+const getCategoryItems = async (categoryId) => {
     const url = 'http://localhost:3000/products'
     const takeData = await fetch(url)
     const data = await takeData.json()
@@ -34,5 +34,5 @@ export const clientService = {
     getCategories,
     getItems,
     itemInfos,
-    relatedItems
+    getCategoryItems
 }

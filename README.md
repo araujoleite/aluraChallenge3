@@ -11,6 +11,9 @@ No meu projeto utilizei montei um CRUD assíncrono com JSON Server.
 
 -------
 
+# Layout Base
+https://www.figma.com/file/55a7sckcuC4Q7RqaPH0Hvs/Challenge3---AluraGeek?node-id=0%3A1
+
 # 🖥 Resultado
 https://alura-challenge3.vercel.app
 
